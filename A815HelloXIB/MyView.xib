@@ -11,30 +11,44 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyView" customModule="A815HelloXIB" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="682" height="654"/>
+            <rect key="frame" x="0.0" y="0.0" width="685" height="140"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cWP-tY-cbO">
-                    <rect key="frame" x="316.5" y="311.5" width="51" height="31"/>
-                </switch>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="SYL-py-Hyu">
-                    <rect key="frame" x="57" y="76" width="150" height="4"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </progressView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jFw-jS-RnT">
+                    <rect key="frame" x="10" y="54" width="609" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a72-0g-zms">
+                    <rect key="frame" x="629" y="54" width="46" height="42"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="tYY-so-x3t"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="submit:" destination="-1" eventType="touchUpInside" id="Nkc-H4-wXf"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemGreenColor"/>
             <constraints>
-                <constraint firstItem="cWP-tY-cbO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BSa-52-P6O"/>
-                <constraint firstItem="cWP-tY-cbO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PYt-Ab-UcU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="a72-0g-zms" secondAttribute="trailing" constant="10" id="5qi-ZV-nPH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="a72-0g-zms" secondAttribute="bottom" constant="10" id="F3x-Ke-lL1"/>
+                <constraint firstItem="jFw-jS-RnT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="FQL-rX-8cG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jFw-jS-RnT" secondAttribute="bottom" constant="10" id="Oe9-3C-Wz7"/>
+                <constraint firstItem="jFw-jS-RnT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="aLf-za-DHg"/>
+                <constraint firstItem="a72-0g-zms" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="j5Z-kN-2Yq"/>
+                <constraint firstItem="a72-0g-zms" firstAttribute="leading" secondItem="jFw-jS-RnT" secondAttribute="trailing" constant="10" id="xVW-He-ax5"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="324.63768115942031" y="-11.383928571428571"/>
+            <point key="canvasLocation" x="326.81159420289856" y="-183.48214285714286"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
